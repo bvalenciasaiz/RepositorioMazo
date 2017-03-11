@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Mazo</title>
+	<link rel="stylesheet" type="text/css" href="CSS\reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS\CssWEB.css">
+	<link rel="stylesheet" type="text/css" href="CSS\fonts.css">
+	<link rel="stylesheet" type="text/css" href="CSS\responsivoPaginaPrincipal.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+	<link rel="icon" type="image/png" href="imagenes\logos\mazo.png"/>
+	<link href="CSS\ventanamodal.css" rel="stylesheet" type="text/css">
+	<link href="CSS\busquedaModal.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js" language="JavaScript"></script>
+	<script type="text/javascript" src="js/modal.js" language="JavaScript"></script>
+	<script type="text/javascript" src="js/busquedaModal.js" language="JavaScript"></script>
+	<!--<script type="text/javascript" src="js/fotosPrincipales.js" language="JavaScript"></script>-->
+
+</head>
+
+<body>
+
+<div class="devoluciones" style="color: #FFFFFF;">
+      <ul class="top">
+		<li id="izquierda">¡Descuento del 10% para socios!</li>
+		<li id="derecha" >Devoluciones gratuitas y gastos de envíos</li>
+	</ul>
+</div>
+
+<div class="dev_responsive" style="color: #FFFFFF;">
+      <ul class="top">
+		<marquee direction="left" scrollamount="7">
+			<a id="nuevoIzquierda">¡Descuento del 10% para socios!</a><br/>
+			<a id="nuevoDerecha">Devoluciones gratuitas y gastos de envíos</a><br/>
+		</marquee>
+	</ul>
+</div>
+
+<!--Carla-->
+	<ul class="sesion">
+			<li><a href="#articulo1" class="usuario"><span class="icon-user"></span></a></li>
+			<li><a href="#" class="bolsa"><i class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i></a></li>
+	</ul>
+
+	<div class="busqueda">
+		<a href="#articulo2" class="lupa"><span class="icon-search"></span></a>
+	</div>		
+
+	<div class="limpiar"></div>
+
+<!--carlos -->
+
+<div class="mazo"> 
+   <a href="index.html"> <img src="imagenes\logos\mazo.png" height="100%" width="100%"/></a>
+</div>
+
+	<div class="limpiar"></div>
+
+	<section>
+
+		<div class="mascara">
+			<ul class="carrusel">
+	    		<li class="s1"></li>
+	    		<li class="s2"></li>
+	    		<li class="s3"></li>
+	    		<li class="s4"></li>
+	    		<li class="s5"></li>
+  			</ul>
+		</div>
+
+<script>
+		var posX = 0;
+		//$('elemento clase del CSS').función_jQuery('elemento_librería_jQuery',función_a_ejecutar)
+	   	function mueveCarrusel() {
+	   				if(posX<-3600){
+				posX=-0;
+				$('.carrusel').css({ left: 0});
+			} 		
+			$('.carrusel').animate({left: posX},"slow");
+			posX += -900;			
+			transicion=3000;
+			setTimeout("mueveCarrusel()", transicion);
+					
+		}
+		
+	$(function(){mueveCarrusel();});
+	</script>
+		
+
+		<div id="divMenuInferior">
+			<ul>
+				<li class="mujer"><a href="WEBmujer.html">MUJER</a></li>
+				<li class="hombre"><a href="#">HOMBRE</a></li>
+				<li class="ninio"><a href="#">NIÑO</a></li>
+			</ul>	
+		</div>
+
+	</section>
+
+<!--Angel-->
+	<div id="piePagina">
+<!-- Identico todos los logos como una lista de logos-->	
+		<ul class="logos">
+		    <li class="insta">
+		    	<a href="https://www.instagram.com/" target="_black"><img src="imagenes\logos\insta.png" height="35px" width="35px"/></a>
+		    </li>
+			<li class="fb">
+				<a href="https://es-es.facebook.com/" target="_black"><img src="imagenes\logos\fb.png" height="35px" width="35px"/></a>
+			</li>
+			<li class="pint">
+				<a href="https://es.pinterest.com/" target="_black"><img src="imagenes\logos\pint.png" height="35px" width="35px"/></a>
+			</li>
+			<li class="tw">
+				<a href="https://twitter.com/" target="_black"><img src="imagenes\logos\Twitter.png" height="35px" width="35px"/></a>
+			</li>
+		</ul>
+<!-- Identico como listas la distinta información sobre nosotros-->	
+			<ul class="nosotros">
+				<li class="negrita">Sobre nosotros</li>
+				<li><a href="#" target="_black">Trabaja con nosotros</a></li>
+				<li><a href="#" target="_black">Quienes somos</a></li>
+				<li><a href="#" target="_black">Sala de prensa</a></li>
+				<li><a href="#" target="_black">Ventajas</a></li>
+				<li><a href="#" target="_black">Ayuda</a></li>
+			</ul>
+
+			<ul class="garantias">
+				<li class="negrita">Garantias</li>
+				<li><a href="#" target="_black">Protección de datos</a></li>
+				<li><a href="#" target="_black">Devoluciones</a></li>
+				<li><a href="#" target="_black">Plazo de entrega</a></li>
+				<li><a href="#" target="_black">Métodos de pago</a></li>
+				<li><a href="#" target="_black">Compra segura</a></li>
+			</ul>
+
+			<ul class="atencion">
+				<li class="negrita">Atención al cliente</li>
+				<li><a href="contacto.html" target="_black">Contacto</a></li>
+				<li><a href="#" target="_black">Seguimiento de pedidos</a></li>
+				<li><a href="#" target="_black">Gasto de envío</a></li>
+				<li><a href="#" target="_black">Devoluciones</a></li>
+				<li><a href="#" target="_black">Facturas</a></li>
+			</ul>
+<!-- Identico todos los logos como una lista de logos-->	
+			<ul class="pagos">
+		        <li class="visa"><i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i> </li>
+				<li class="mastercard"><i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i></li>
+				<li class="maestro"><i class="fa fa-credit-card fa-2x" aria-hidden="true"></i></li>
+				<li class="paypal"><i class="fa fa-cc-paypal fa-2x" aria-hidden="true"></i></li>
+			</ul>
+
+		<p class="mercado"> 
+		© 2011-2016 MAZO, S.L. – Todos los derechos reservados | Condiciones legales | Política de privacidad 
+		<br>
+		MAZO es una tienda de ropa y complementos, situada en C/Fuencarral Nº26.  
+		<br>
+		NUESTRO C.I.F. Inscrita en el Registro Mercantil Madrid.
+		</p>
+	       
+	</div>
+
+		<div id="cookies">
+		<button class="cerrarCookie"> X </button>
+		<p class="tCookies">Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies. 
+		<button class="botonVerde">OK</button>
+		<a href="#">Más información</a>	
+		</p>
+	</div>
+</body>
+</html>

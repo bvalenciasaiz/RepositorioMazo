@@ -1,0 +1,39 @@
+body{
+	position: absolute;
+	width: 100%;
+	font-family: arial;
+	font-size: 0.75em;
+}
+
+.mazo{ 
+	position: absolute;
+	margin-top: 1em;
+	margin-left: 34%;
+	float: left;
+}
+
+
+#registro{
+	position: absolute;
+	margin-left: 35%;
+	margin-top: 16em;
+}
+
+#formulario{
+	margin: 1.5em;
+}
+
+#formulario label{
+	width: 30%;
+	float: left;
+}
+
+.enviar{
+	margin-top: 1.25em;
+	margin-left: 10em;
+	cursor: pointer;
+}
+button{
+	margin-left: 6.25em;
+	cursor: pointer;
+}

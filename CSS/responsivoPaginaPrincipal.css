@@ -1,0 +1,194 @@
+/*fichero donde modificamos lo que mostramos por pantalla dependiendo del dispositivo*/
+/*para dispositivo 980px o menos*/
+@media screen and (max-width: 980px){
+	
+
+#izquierda{
+	margin: left;
+	left: 1em;
+	}
+
+.sesion{
+	/* preguntar a diego por qué si pongo float left me lo sitia a la izquierda*/
+	position: absolute;
+	float: left;
+}
+
+.carro{
+	position: relative;
+	top: 1.5em;
+	left: -1em;
+}
+
+.busqueda{
+	position: relative;
+	float: left;
+	left: 1em;
+	top: -0.5em;
+}
+
+/* me falta por colocar las imagenes y el logo de mazo*/
+
+.mazo{ 
+	position: absolute;
+	margin: 0 auto;
+	left:30%;
+	width: 40%;
+	top:4em;
+}
+
+.titulomujer, .titulohombre, .tituloninos{display:none;} 
+
+.mujer{
+	position: absolute;
+	margin: 0 auto;
+	float: left;
+	top: 17em;
+	left: 10%;
+	width: 25%;
+	}
+
+.hombre{
+	position: relative;
+	float: left;
+	left: 35%;
+	top: 5.7em;
+	width: 25%;
+	}
+
+.ninos{
+	position: relative;
+	left: 35%;
+	width: 25%;
+	top: 5.7em;
+	}
+
+.logos{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	left: 30%;
+	/* por qué no funciona con %*/
+	top: 8em;
+}
+#mercado, #propiedadesListas {display: none;}
+.pagos{display: none}
+}
+
+
+/*para dispositivo de 750px o menos*/
+@media screen and (max-width: 750px){
+
+
+.dev_responsive{
+	overflow: hidden;
+	padding: 1em;
+	background: #000000;
+	font-size: 0.937em;
+	font-family: "arial";
+	font-weight: bold; 
+	float:left;
+	width: 100%;
+}
+
+#nuevoIzquierda{
+	margin-top: 0em;
+	font-size: 0.9em;
+	color: white;
+}
+
+#nuevoDerecha{
+	margin-right: 0.8em;
+	font-size: 0.9em;
+	position: relative;
+	color: white;
+}
+
+.mazo{ 
+	position: absolute;
+	left: 30%;
+	top: 5em;
+
+}
+
+.mujer{
+	top: 15em;
+}
+
+.hombre, .ninos{
+	top:2.5em;
+	}
+
+.logos{
+	top: 5em;
+}
+
+.devoluciones{display: none;}
+.dev_responsive{display: inline;}
+
+
+}
+
+/*para dispositivo de 480 px o menos*/
+@media screen and (max-width: 480px){
+
+
+.sesion{
+left: -20%;
+top: 0.5em;
+}
+
+.busqueda{
+	position: absolute;	
+	float:left;
+	left: 40%;
+	top: 2.7em;
+}
+
+.carro{
+	position: absolute;	
+	float: left;
+	top: 0em;
+	left: 85%;
+}
+
+.mazo{ 
+	position: absolute;
+	margin: 0 auto;
+	top: 8em;
+	width: 50%;
+}
+
+.mujer {
+	
+	position: absolute;
+	float: none;
+	width: 50%;
+	left: 30%;
+}
+.hombre{
+	
+	position: absolute;
+	top: 28em;
+	left:26.5%;
+	width: 50%;
+}
+.ninos{
+	
+	position: absolute;
+	top: 50.5em;
+	left: 26.5%;
+	width: 50%;
+}
+
+.logos{
+	
+	top: 79.5em;
+}
+
+#mercado {display: none;}
+.pagos {display: none;}
+#propiedadesListas{display: none;}
+
+
+}

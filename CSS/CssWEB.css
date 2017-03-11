@@ -1,0 +1,277 @@
+html{height: 100%;width: 100%; margin: 0em;}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+*{	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: arial;
+	font-size: 1em;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}	
+
+.devoluciones{
+	overflow: hidden;
+	padding: 0.875em;
+	background: #000000;
+	font-size: 0.937em;
+	font-family: "arial";
+    font-weight: bold; 
+}
+
+#izquierda{
+	margin-top: -0.3437em;
+	position: absolute;
+	z-index: 1;
+	left: 41%;	
+}
+
+#derecha{
+	margin-top: -0.3437em;
+	margin-right: 0.1562em;
+	position: absolute;
+	z-index: 2;
+	right: 0em;
+}
+.usuario{
+	font-size: 1.25em;
+	margin-top: 0.1em;
+	margin-left: -2.7em;
+	position: absolute;
+}
+.bolsa{
+    font-size: 0.7em;
+	margin-top: -0.1em;
+	margin-left: -2.95em;
+	position: absolute;
+}
+
+.sesion{
+	width: 100%;
+	list-style: none;
+	font-size: 1.5em;
+	text-align: right;
+}
+
+.sesion li{
+	display: inline-block;
+	margin-top: 0em;
+	margin-right: 0.5em;
+}
+
+.busqueda{
+	position: absolute;
+	margin-top: 0.1%;
+	left: 87%;
+	font-size: 1.8em;
+}
+
+.mazo{ 
+	position: absolute;
+	z-index: 1;
+	margin-top: -0.5em;
+	margin-left: 34%;
+	float: left;
+}
+
+.dev_responsive{display: none;}
+
+.limpiar{ 
+clear: both;
+ }
+
+ #portada{
+	position: absolute;
+	top: 30%;
+}
+.mascara {
+	width: 900px;
+	height: 500px;
+	margin: 50px auto 0;
+	overflow: hidden;
+	background: #FFF;
+}
+
+.carrusel {
+	top: 9em;
+	position: relative;
+	width: 4500px;
+	height: 500px;
+}
+.carrusel li {
+	width: 900px;
+	height: 500px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.s1 {
+	background-image: url(../imagenes/portada1.jpg);
+}
+.s2 {
+	background-image: url(../imagenes/portada2.jpg);
+}
+.s3 {
+	background-image: url(../imagenes/portada3.jpg);
+}
+.s4 {
+	background-image: url(../imagenes/portada4.jpg);
+}
+.s5 {
+	background-image: url(../imagenes/portada5.jpg);
+}
+
+
+#divMenuInferior {
+	position: absolute;
+	z-index: 1000;
+	top: 80%;
+	left: 37%;
+	text-align: center;
+}
+#divMenuInferior ul li {
+	background-color: #000;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1.5em;
+	border-radius: 150px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+}
+
+#divMenuInferior ul li:hover{
+	-webkit-animation: cssAnimation 1.5558s 13 ease;
+	-moz-animation: cssAnimation 1.5558s 13 ease;
+	-o-animation: cssAnimation 1.5558s 13 ease;
+	}
+	@-webkit-keyframes cssAnimation {
+	from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+	to { -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+	}
+	@-moz-keyframes cssAnimation {
+	from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+	to { -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+	}
+	@-o-keyframes cssAnimation {
+	from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+	to { -o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
+
+
+
+
+#divMenuInferior ul li a{
+	color: #fff;
+}
+
+.limpiar{ 
+	clear: both;
+}
+
+ /* Angel*/
+
+#piePagina {
+	position: absolute;
+	top: 100%;
+	left: 4em;
+}
+
+#piePagina ul li{
+	list-style: none;
+}
+
+.negrita{
+	font-weight: bold;
+}
+
+.logos, .nosotros, .garantias, .atencion, .pagos {
+	position: relative;
+	display: inline-block;
+}
+
+/*Grises para logos*/
+
+.logos li img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.logos li:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/*fin grises para logos*/
+
+.insta, .fb, .pint, .tw {
+	position: relative;
+	display: inline-block;	
+	bottom: 2.2em;
+}
+
+.nosotros, .garantias, .atencion {
+margin-left: 4em;
+line-height: 0.9em;
+}
+
+.pagos{
+	margin-left: 2em;
+}
+
+.visa, .mastercard, .maestro, .paypal {
+	position: relative;
+	display: inline-block;		
+	margin-left: 1em;
+	bottom: 2em;
+}
+
+.mercado{
+	position: absolute;
+	bottom: -5em;
+	margin: 1em;
+	left: -4em;
+	font-size: 0.8em;
+}
+
+
+#cookies {
+	background-color: rgba(0,0,0,0.8); 
+	position: fixed;
+	opacity: 0.9;
+	width: 100%;
+	height: 8%;
+	bottom: 0em;
+	z-index: 600;
+	color: black;
+	display: none;
+}
+
+#cookies p {
+	position: absolute;
+	top: 40%;
+	left: 2.5em;
+	font-size: 0.7em;
+	color: white;
+	display: inline-block;
+}
+#cookies p a{
+	color: white;
+	font-weight: bold;
+}
+
+.botonVerde{
+	background-color: #266526;
+color: white;
+	font-weight: bold;	
+	opacity: 0.8;
+	border-style: none;
+}
+
+

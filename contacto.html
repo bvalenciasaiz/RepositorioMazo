@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="CSS\reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS\contactoCSS.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+	<link rel="icon" type="image/png" href="imagenes\logos\mazo.png"/>
+</head>
+
+	
+<body>
+
+<div class="mazo"> 
+   <a href="WEB.html"><img src="imagenes\logos\mazo.png" height="100%" width="100%"/></a>
+</div>
+
+	
+	<form id="contacto" action="#" method="post">
+
+		<p>Por favor rellene el formulario para contactar con nosotros, 
+		<br>le responderemos en un plazo de 24-48 horas</p>
+		<br>
+
+		<button class="cerrarFormulario"> X </button>
+
+		<div id="formulario">
+			<label>	Nombre </label>
+			<input type="text" name="nombre" title="Por favor introduzca su nombre" size="23" required/>
+		</div>		
+
+		<div id="formulario">
+			<label>	Correo electrónico </label>
+			<input type="email" name="mail" title="Por favor introduzca tu correo electrónico" placeholder="user@dominio.com" size="23" required/>
+		</div>
+
+		<div id="formulario">
+			<label> Tipo </label>
+				<select type="select" name="Tipo" size="1">
+					<option selected value="0"> Elige una opción ..... </option>
+					<option>¿Cuando recibiré mi pedido?</option>
+					<option>Devolución</option>
+					<option>Facturas</option>
+					<option>Cambio de talla</option>
+					<option>Otros</option>
+				</select>
+		</div>
+
+		<div id="formulario">
+			<label> Comentarios	</label>
+			<textArea type="text" name="cuadroTexto" title="Por favor, introduzca sus observaciones" rows="4" cols="24"> </textArea>
+		</div>
+
+		<div id="formulario">
+			<button class="enviar" type="submit" title="Enviar"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></button>
+		</div>
+	</form>
+
+</body>
+</html>

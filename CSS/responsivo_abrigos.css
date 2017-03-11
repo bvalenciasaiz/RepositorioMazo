@@ -1,0 +1,286 @@
+/*fichero donde modificamos lo que mostramos por pantalla dependiendo del dispositivo*/
+
+@media screen and (max-width: 980px){
+	
+    #izquierda{
+        margin: left;
+        left: 1em;
+    }
+
+    .menu_bar {
+        display:block;
+        position: absolute;
+        top:-8%;
+        height: 10%;
+        background:#f4f4f4;
+        width: 100%;
+    }
+     
+    .menu_bar .menu {
+        position: absolute;
+        margin-top: 2%;
+        left: 2%;
+        overflow: hidden; 
+    }
+
+    .menu_bar .logo{
+        position: absolute;
+        left: 20%;
+       
+    }
+
+    .menu_bar .usuario{
+        position: absolute;
+        left: 90%;
+        margin-top: 2%;
+    }
+
+    .menu_bar .bolsa{
+        position: absolute;
+        left: 95%;
+        margin-top: 2%;
+    }
+
+    #menu {
+        width: 100%;
+        top: 2%;
+        position: absolute;
+        left: -100%;
+         /*Esta a la izquierda al -100% para que no se vea, cuando cargas el JS, éste le ordena que lo ponga a la izquiera con left:0*/
+        margin: 0;
+        overflow: scroll;
+    }
+     
+    #menu ul li {
+        display: block;
+    }
+     
+    #menu ul li a {
+        display: block;
+    }
+
+    .modelo1{
+        margin-left: 17%;
+        margin-top: 10em;
+        height: 30%;
+        width: 18%;
+    }
+
+    .modelo2{
+        margin-left: 40%;
+        margin-top: 10em;
+        height: 30%;
+        width: 18%;
+    }
+
+    .modelo3{
+        margin-left: 63%;
+        margin-top: 10em;
+        height: 30%;
+        width: 18%;
+    }
+
+    .modelo4{
+        margin-left: 17%;
+        margin-top: 28em;
+        height: 30%;
+        width: 18%;    
+    }
+
+    .modelo5{
+        margin-left: 40%;
+        margin-top: 28em;
+        height: 30%;
+        width: 18%;   
+    }
+
+    .modelo6{
+        margin-left: 63%;
+        margin-top: 28em;
+        height: 30%;
+        width: 18%; 
+    }
+
+    .modelo7{
+        margin-left: 17%;
+        margin-top: 46em;
+        height: 30%;
+        width: 18%; 
+    }
+
+    .modelo8{
+        margin-left: 40%;
+        margin-top: 46em;
+        height: 30%;
+        width: 18%; 
+    }
+
+    .modelo9{
+        margin-left: 63%;
+        margin-top: 46em;
+        height: 30%;
+        width: 18%; 
+    }
+
+    .logos{
+    	position: relative;
+        margin: 0 auto;
+        width: 100%;
+        left: 40.5%;
+        top: 65em;
+    }
+
+   .sesion,.busqueda,.mazo{display: none;}
+    .menuDesplegable{display: none;}
+    #menusuperior{display: none;}
+    #propiedadesListas{display: none;}
+    .pagos{display: none;}
+    #mercado{display: none;}
+    #personal{display: none;}
+}
+
+
+@media screen and (max-width: 750px){
+
+    .dev_responsive{
+        display: inline;
+        overflow: hidden;
+        padding: 1em;
+        background: #000000;
+        font-size: 0.937em;
+        font-family: "arial";
+        font-weight: bold; 
+        float:left;
+        width: 100%;
+    }
+
+    #nuevoIzquierda{
+        margin-top: 0em;
+        font-size: 0.9em;
+        color: white;
+    }
+
+    #nuevoDerecha{
+        margin-right: 0.8em;
+        font-size: 0.9em;
+        position: relative;
+        color: white;
+    }
+    .mazo{
+        position: absolute;
+        margin-left: 30%;
+        margin-top: 1em;
+        width: 40%;
+    }
+
+
+    #menuArriba ul{
+        margin-top: 6.5em;
+        margin-left: 28.5%;
+    }
+
+    #menuArriba ul li a{
+        padding: 1em;
+    }
+
+    #menuAbajo ul{
+        margin-top: 9.5em;
+        margin-left: 20.5%;
+        width: 85%;
+    }
+
+    #menuAbajo ul li a{
+        padding: 1em;
+    }
+
+    .logos{
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        left: 37.5%;
+        top: 63em;
+    }
+
+    .devoluciones{display: none;}
+}
+
+
+@media screen and (max-width: 480px){
+	
+    .devoluciones{
+        font-size: 0.8em;
+    }
+
+    #izquierda{
+        margin-top: -1em;
+        margin-left: 25%;
+    }
+
+    #derecha{
+        margin-top: 0.5em;
+        margin: left;
+        margin-left: 19%
+    }
+
+
+    #personal {
+        position: absolute;
+        float: left;
+        width: 100%;
+    }
+
+    .sesion{
+        left: -20%;
+        top: 0.5em;
+    }
+
+    .busqueda{
+        position: absolute;
+        float:left;
+        left: 40%;
+        top: 3.2em;
+    }
+
+    .carro{
+        position: absolute;
+        float: left;
+        top: -1.8em;
+        left: 85%;
+    }
+
+
+    .mazo{
+        position: absolute;
+        margin-left: 20%;
+        margin-top: 4.5em;
+        width: 60%;
+    }
+
+    #menuArriba ul{
+        margin-top: 9em;
+        margin-left: 17%;
+        width: 150%;
+    }
+
+    #menuArriba ul li a{
+        padding: 1em;
+    }
+
+    #menuAbajo ul{
+        margin-top: 12em;
+        margin-left: 4.5%;
+        width: 150%;
+    }
+
+    #menuAbajo ul li a{
+        padding: 1em;
+    }
+
+    .logos{
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        left: 32%;
+        top: 62em;
+    }
+}
